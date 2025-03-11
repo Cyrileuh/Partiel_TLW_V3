@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <script defer src="script_poke.js"></script> <!-- Lien vers le script -->
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le CSS -->
+</head>
+<body>
+    <h1>Pokédex</h1>
+
+    <!-- Bouton pour afficher les Pokémon -->
+    <button id="afficher-btn">Afficher les Pokémon</button>
+
+    <!-- Conteneur pour les Pokémon -->
+    <div id="conteneur">
+    </div>
+
+    <!-- Template pour générer chaque Pokémon -->
+    <template id="pokemon-template">
+        <div class="pokemon-card">
+            <img class="pokemon-img" src="" alt="">
+            <h2 class="pokemon-nom"></h2>
+            <p class="pokemon-type"></p>
+        </div>
+    </template>
+</body>
+</html>

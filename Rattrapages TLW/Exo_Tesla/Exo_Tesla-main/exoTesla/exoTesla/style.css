@@ -1,0 +1,227 @@
+@font-face {
+	font-family: "Gotham Medium";
+	src: url('Gotham Medium.otf');
+}
+
+* {
+    font-family: "Gotham Medium", Helvetica, Arial, sans-serif;
+}
+
+body,
+h1,
+h2,
+p,
+div,
+section {
+    margin: 0;
+    padding: 0;
+    color: #393c41;
+}
+
+.page {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+#model3 {
+    background-image: url("images/model3.jpg");
+}
+
+#modelS {
+    background-image: url("images/modelS.jpg");
+}
+
+#powerwall {
+    background-image: url("images/solarPanels.jpg");
+}
+
+h1 {
+    padding-top: 100px;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+h2 {
+    color: gray;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-config {
+    background-color: #171a20;
+    color: white;
+}
+
+.btn-vehicules {
+    background-color: white;
+    color: #171a20;
+}
+.btn-config, .btn-vehicules {
+    border-radius: 50px;
+    opacity: 0.75;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 10px;
+}
+
+#model3-img {
+    width: 100px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.bas-section {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 50px;
+}
+
+#model3 .bas-section {
+    bottom: 0px;
+}
+
+#reserver {
+    font-size: 14px;
+    color: #393c41;
+    text-decoration: underline;
+}
+
+#reserver:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #393c41;
+    text-decoration-thickness: 2px;
+}
+
+svg {
+    display: flex;
+    position: absolute;
+}
+
+.navbar ul {
+    /* padding: 0px; */
+    text-align: center;
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline-block;
+    min-width: 150px;
+}
+
+.navbar a {
+    color: #393c41;
+    font-size: 14px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    width:100%;
+    z-index: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#footer-tesla{
+    text-align: center;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+#footer-tesla ul {
+    text-align: center;
+}
+
+#footer-tesla li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#footer-tesla a {
+    color: #393c41;
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 10px;
+    margin: 0 5%;
+    justify-items: center;
+}
+
+.grid-item {
+    margin: 0 30px;
+    max-width: 320px;
+    height: 530px;
+    position: relative;
+}
+
+.grid-item img{
+    width: 100%; /* on garde ça */
+}
+
+.inner {
+    padding: 30px;
+    font-size: 0.9em;
+}
+
+.inner p {
+    margin-bottom: 30px;
+    color: #171a20;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.inner h2 {
+    color: #171a20;
+    padding-top: 0px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+.grid-item a {
+    border-radius: 50px;
+    opacity: 0.75;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: none;
+    background-color: #171a20;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+}

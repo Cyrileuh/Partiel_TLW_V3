@@ -1,0 +1,128 @@
+body, div, section, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gotham Medium", Helvetica, Arial, sans-serif;
+}
+
+.page {
+    height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+    background-position: center; /* Centre l'image de fond */
+    background-size: cover; /* L'image couvre toute la section */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    text-align: center; /* Centre le texte s'il y en a */
+}
+
+#model3 {
+    background: url("images.jpeg");
+}
+
+#modelS {
+    background: url("images.jpeg");
+}
+
+h1 {
+    font-size: 40px; /* Taille du texte */
+    font-weight: 100; /* Graisse du texte (très fin) */
+    padding-top: 100px; /* Espacement en haut */
+}
+
+h2 {
+    font-size: 18px; /* Taille du texte */
+    font-weight: 100; /* Graisse du texte (très fin) */
+    color: gray; /* Couleur du texte */
+    margin-top: 10px; /* Marge en haut */
+}
+
+a {
+    font-size: 12px; /* Taille du texte */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+    text-transform: uppercase; /* Convertit le texte en majuscules */
+    text-decoration: none; /* Supprime les soulignements */
+    cursor: pointer; /* Change le curseur en pointeur */
+}
+
+
+/* Style commun aux deux boutons */
+.btn-config, 
+.btn-vehicules {
+    opacity: 0.75; /* Légèrement transparent */
+    padding: 10px 20px; /* Espacement intérieur */
+    margin: 0 10px; /* Marges sur les côtés */
+    border: none; /* Supprime la bordure */
+    border-radius: 50px; /* Coins arrondis */
+    display: inline-block; /* Permet de conserver la mise en forme des liens */
+    text-align: center; /* Centre le texte */
+    font-size: 14px; /* Taille de texte optionnelle */
+    font-weight: bold; /* Rendre le texte plus visible */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: opacity 0.3s; /* Effet de transition sur l'opacité */
+}
+
+
+/* Style spécifique au bouton btn-config */
+.btn-config {
+    background-color: #171a20; /* Fond noir */
+    color: white; /* Texte blanc */
+}
+
+/* Style spécifique au bouton btn-vehicules */
+.btn-vehicules {
+    background-color: white; /* Fond blanc */
+    color: #171a20; /* Texte noir */
+}
+
+
+/* Redimensionner l’image d'id model3-img */
+#model3-img {
+    width: 100px; /* Largeur de l'image */
+    height: auto; /* Garde les proportions */
+}
+
+/* Ajouter une marge supérieure au paragraphe dans la section model3 */
+.model3 p {
+    margin-top: 20px;
+}
+
+/* Placer bas-section en bas de la section model3 */
+.model3 .bas-section {
+    position: absolute;
+    bottom: 0px; /* Aligné tout en bas */
+    width: 100%; /* Occupe toute la largeur de la section */
+    text-align: center; /* Centre le contenu */
+}
+
+
+/* Style du lien #reserver */
+.model3 #reserver {
+    font-size: 14px; /* Taille du texte */
+    color: #393c41; /* Couleur du texte */
+    text-decoration: underline; /* Souligné par défaut */
+}
+
+/* Effet au survol */
+.model3 #reserver:hover {
+    text-decoration: underline solid 2px #393c41; /* Ligne soulignée, solide, épaisseur 2px, couleur #393c41 */
+}
+
+
+
+header {
+    position: fixed; /* Fixe l'en-tête en haut de la page */
+    top: 0; /* Aligné tout en haut */
+    left: 0; /* Aligné à gauche */
+    width: 100%; /* S'étend sur toute la largeur */
+    z-index: 1000; /* S'assure qu'il reste au-dessus des autres éléments */
+    background-color: white; /* Ajoute un fond pour éviter qu'il soit transparent */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Optionnel : ajoute une ombre pour le démarquer */
+}
+
+
+html {
+    scroll-behavior: smooth; /* Active le défilement fluide */
+}

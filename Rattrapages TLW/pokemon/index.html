@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = 'fr'>
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- ECRIVEZ VOTRE CODE EN DESSOUS DE CETTE LIGNE -->
+    <div id="site-header">
+        <header>
+            <img src="../images/logo.png" >
+            <a href="">Accueil</a>
+            <a href="">Pokédex</a>
+            <a href="">Poképedia</a>
+            <a href="">A propos</a>
+        </header>
+    </div>
+
+    <!-- ECRIVEZ VOTRE CODE AU-DESSUS DE CETTE LIGNE -->
+    <main>
+        <button value="Afficher les Pokémons" onclick="afficher()"></button>
+        <div id ='test'>
+            <template id="card-template">
+                <div class="card">
+                    <div>
+                        <img src= {{image}} class="card-img">
+                    </div>
+                    <p>{{nom}}</p>
+                    <p>#{{numero}}</p>
+                    <img src= {{slot1}}>
+                    <img src= {{slot2}}>
+                </div>
+            </template>
+        </div>
+    </main>
+</body>
+</html>

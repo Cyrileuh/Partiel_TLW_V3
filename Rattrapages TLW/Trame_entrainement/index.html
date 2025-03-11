@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importation API</title>
+    <script defer src="script.js"></script> <!-- Chargement du script après la page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="importerDonnees()">
+    <h1>Liste des éléments depuis l'API</h1>
+
+    <!-- Conteneur pour afficher les éléments importés -->
+    <div id="conteneur">
+    </div>
+
+    <!-- Template pour créer dynamiquement chaque élément -->
+    <template id="element-template">
+        <div class="element">
+            <img class="element-img" src="" alt="">
+            <h2 class="element-nom"></h2>
+        </div>
+    </template>
+</body>
+</html>

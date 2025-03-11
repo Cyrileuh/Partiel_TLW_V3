@@ -1,0 +1,69 @@
+body {
+    background-image: linear-gradient(rgba(57, 13, 10, 0.6), rgba(57, 13, 10, 0.6)), url(https://images.ctfassets.net/s5n2t79q9icq/1RJfBURhOuSJba5feByRzk/f8352755ec2b3a015dd82568d74dba4c/Hsnfvfty23lnf0-1920x1040.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+header {
+    background-color: black;
+    height: 55px;
+    padding-left: 5%;
+    size: 130px;
+    display: flex;
+    width: 100%;
+    img {
+        width: 130px;
+    }
+
+}
+
+.head {
+    position: fixed;
+}
+
+.navbar {
+    display: flex;
+    a {
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-decoration: none;
+        
+    }
+    a:hover {
+        color: #ea3601;
+    }
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75%;
+    margin-top: 15px;
+}
+
+#grid-container {
+    text-align: center;
+    display: grid;
+    padding: 0px 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card-img {
+    border-radius: 10px;
+}
+
+#card-template {
+    p {
+        color: antiquewhite;
+        font-weight: 500;
+    }
+}

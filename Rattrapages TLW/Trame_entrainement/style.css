@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #ff3e3e;
+}
+
+/* Style du bouton */
+#afficher-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff3e3e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#afficher-btn:hover {
+    background-color: #d32f2f;
+}
+
+#conteneur {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.pokemon-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 150px;
+}
+
+.pokemon-img {
+    width: 100px;
+    height: 100px;
+}
+
+.pokemon-nom {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pokemon-type {
+    font-size: 14px;
+    color: gray;
+}

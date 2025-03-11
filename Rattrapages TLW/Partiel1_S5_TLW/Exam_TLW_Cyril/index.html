@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Le seigneur des anneaux</title>
+        <script src="script2.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body onload="afficherCartes()">
+        <header class="head">
+            <div>
+                <img src="/images/logo.png" alt="logo">
+            </div>
+            <div class="navbar">
+                <ul><a href="">produits</a></ul>
+                <ul><a href="">REGARDER</a></ul>
+                <ul><a href="">JOUER</a></ul>
+                <ul><a href="">HISTOIRE</a></ul>
+                <ul><a href="">ARTICLES</a></ul>
+            </div>
+        </header>
+
+        <section class="container">
+            <div>
+                <img src="/images/LTR.webp">
+                <div id="grid-container">
+                </div>
+            </div>
+        </section>
+
+        <template id="card-template">
+            <div class="card">
+                <img id='url_carte' class="card-img">
+                <p id="nom_carte">{{texte}}</p>
+            </div>
+        </template>
+    </body>
+</html>
