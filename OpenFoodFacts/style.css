@@ -1,0 +1,103 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f2e9e4;
+}
+
+/* En-tête */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    height: 80px;
+    max-width: 75%;
+    margin: auto;
+}
+
+.header nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 1em;
+}
+
+/* Barre de recherche */
+.search-bar {
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+/* Conteneur principal */
+.container {
+    background-color: #f6f3f0;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Grille des produits */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    width: 80%;
+}
+
+/* Cartes produits */
+.product-card {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 4px rgba(0, 135, 194, 0.4);
+}
+
+/* Image produit */
+.product-image-container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.product-image {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/* Infos produit */
+.product-name {
+    font-size: 14px;
+    height: 80px;
+}
+
+.product-brand, .product-quantity {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Scores */
+.product-scores {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.score-image {
+    height: 32px;
+}

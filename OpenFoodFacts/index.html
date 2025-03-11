@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenFoodFacts - Produits Alimentaires</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body onload="recupererProduits()">
+
+    <!-- En-tête -->
+    <header class="header">
+        <h1>OpenFoodFacts</h1>
+        <input type="text" placeholder="Rechercher un produit..." class="search-bar">
+        <nav>
+            <a href="#">Accueil</a>
+            <a href="#">Produits</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Zone principale -->
+    <main class="container">
+        <div class="products-grid" id="products-container"></div>
+    </main>
+
+    <!-- Template pour une carte produit -->
+    <template id="product-template">
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="" alt="Image du produit" class="product-image">
+            </div>
+            <h2 class="product-name"></h2>
+            <p class="product-brand"></p>
+            <p class="product-quantity"></p>
+            <div class="product-scores">
+                <img src="" alt="Nutri-score" class="score-image nutri-score">
+                <img src="" alt="NOVA" class="score-image nova-score">
+                <img src="" alt="Éco-score" class="score-image eco-score">
+            </div>
+        </div>
+    </template>
+
+</body>
+</html>
